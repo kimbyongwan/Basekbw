@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <!-- <EditText
+             android:gravity="center"
+             android:id="@+id/editurl"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="3"
+             android:hint="url을 입력하세요"/>
+         <EditText
+             android:gravity="center"
+             android:id="@+id/editmemo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="3"
+             android:hint="메모 입력"
+             tools:ignore="DuplicateIds" />-->
+        <Button
+            android:id="@+id/detail_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity=""
+            android:text="목록보기"/>
+        <Button
+            android:id="@+id/detail_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity=""
+            android:text="수 정"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/detail_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+</LinearLayout>
